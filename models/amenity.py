@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+
+"""
+Module that defines Amenity class
+"""
+
+from models import base_model
+
+
+class Amenity(base_model.BaseModel):
+    """
+    Inherits attributes from BaseModel
+    """
+
+    name = ""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
